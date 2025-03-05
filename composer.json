@@ -16,15 +16,24 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "drupal/address": "^2.0",
+        "drupal/admin_toolbar": "^3.5",
+        "drupal/commerce": "^3.0",
         "drupal/core-composer-scaffold": "^10.4",
         "drupal/core-project-message": "^10.4",
         "drupal/core-recommended": "^10.4",
+        "drupal/ctools": "^4.1",
+        "drupal/entity": "^1.6",
+        "drupal/pathauto": "^1.13",
+        "drupal/profile": "^1.11",
+        "drupal/state_machine": "^1.12",
+        "drupal/token": "^1.15",
         "drush/drush": "^13.3"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "RC",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
@@ -79,7 +88,7 @@
             ],
             "post-create-project-cmd-message": [
                 "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  Congratulations, you've installed the Drupal codebase  </>",
                 "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
                 "<bg=blue;fg=white>                                                         </>",
                 "",
