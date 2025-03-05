@@ -5,6 +5,7 @@
 # follows official upstream conventions:
 # https://www.drupal.org/docs/develop/using-composer
 
+.ddev
 # Ignore configuration files that may contain sensitive information
 /web/sites/*/*settings*.php
 /web/sites/*/*services*.yml
@@ -21,7 +22,7 @@
 /web/sites/*/tmp
 /web/sites/*/cache
 
-# Ignore drupal core (if not versioning drupal sources)
+# Ignore Drupal 10 specific files and directories
 /web/vendor
 /web/core
 /web/modules/README.txt
@@ -60,3 +61,9 @@
 /drush
 /drupal.phar
 /drupal
+
+# Ignore contributed modules
+/web/modules/contrib
+
+# Ignore contributed themes
+/web/themes/contrib
