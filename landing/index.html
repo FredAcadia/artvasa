@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtVasa – Discover Unique Art</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-main { background-color: #F8F8F8; }
+    .btn-primary { background-color: #1F2937; color: white; }
+    .btn-secondary { background-color: #F1F5F9; color: #1F2937; }
+    .heading-font { font-family: 'Georgia', serif; }
+  </style>
+</head>
+<body class="bg-main">
+
+  <!-- Top Anchor -->
+  <a id="top"></a>
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-6 absolute w-full z-20">
+    <div class="flex items-center space-x-4">
+      <img src="logo.png" alt="Artify Logo" class="h-8">
+      <span class="text-lg text-white font-semibold">ArtVasa</span>
+    </div>
+    <div class="flex space-x-8 text-sm text-white">
+      <a href="#video" class="text-white hover:text-yellow-400 transition-colors duration-200">Video</a>
+      <a href="#featured-products" class="text-white hover:text-yellow-400 transition-colors duration-200">Gallery</a>
+      <a href="#artist-signup" class="text-white hover:text-yellow-400 transition-colors duration-200">Artist Signup</a>
+      <a href="#newsletter" class="text-white hover:text-yellow-400 transition-colors duration-200">Newsletter</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Background Image and Text Overlay -->
+  <section class="relative h-screen flex items-center justify-center">
+    <img src="hero.jpg" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-5xl font-bold leading-tight heading-font">Discover Unique Art</h1>
+      <p class="mt-4 text-xl">Explore our curated collection of exclusive art pieces from emerging artists.</p>
+      <a href="#featured-products" class="mt-6 inline-block btn-primary py-3 px-6 rounded-full">Browse Gallery</a>
+    </div>
+    <!-- Go to Top Arrow -->
+    <a href="#top" class="absolute bottom-4 right-4 text-gray-500 hover:text-yellow-400 transition-colors duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-70 hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video" class="relative py-12 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <div class="aspect-w-16 aspect-h-10">
+        <iframe width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/n2U1zTSrD3s?si=SkmB3wZ9Ic_cilIm" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+                class="w-full h-full rounded-lg shadow-lg"></iframe>
+      </div>
+    </div>
+    <!-- Go to Top Arrow -->
+    <a href="#top" class="absolute bottom-4 right-4 text-gray-500 hover:text-yellow-400 transition-colors duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-70 hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+      </svg>
+    </a>
+  </section>
+  
+  <!-- Featured Products / Artworks Section -->
+  <section id="featured-products" class="relative py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8 heading-font">Featured Artworks</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Artwork 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://fakeimg.pl/400x300/?text=Artwork+1" alt="Artwork 1" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Artwork Title 1</h3>
+            <p class="mt-2 text-gray-600">$500</p>
+          </div>
+        </div>
+        <!-- Artwork 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://fakeimg.pl/400x300/?text=Artwork+2" alt="Artwork 2" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Artwork Title 2</h3>
+            <p class="mt-2 text-gray-600">$750</p>
+          </div>
+        </div>
+        <!-- Artwork 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://fakeimg.pl/400x300/?text=Artwork+3" alt="Artwork 3" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Artwork Title 3</h3>
+            <p class="mt-2 text-gray-600">$600</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Go to Top Arrow -->
+    <a href="#top" class="absolute bottom-4 right-4 text-gray-500 hover:text-yellow-400 transition-colors duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-70 hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- Artist Signup Section -->
+  <section id="artist-signup" class="relative py-12 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold heading-font mb-4">Artist Signup</h2>
+      <p class="text-gray-700 mb-6">
+        Are you an artist looking to showcase your work and sell it online? Join our vibrant community and enjoy benefits like increased exposure, seamless sales processes, and dedicated support. Turn your passion into profit by connecting with art enthusiasts worldwide.
+      </p>
+      <a href="#" class="btn-primary py-3 px-6 rounded-full">Join as an Artist</a>
+    </div>
+    <!-- Go to Top Arrow -->
+    <a href="#top" class="absolute bottom-4 right-4 text-gray-500 hover:text-yellow-400 transition-colors duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-70 hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- Newsletter Signup Section -->
+  <section id="newsletter" class="relative py-12 bg-white">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4 heading-font">Stay Updated</h2>
+      <p class="mb-6 text-gray-700">Sign up for our newsletter to get the latest art drops and exclusive offers.</p>
+      <form class="flex flex-col sm:flex-row items-center">
+        <input type="email" placeholder="Your Email" class="border border-gray-300 p-3 rounded w-full sm:mr-4 mb-4 sm:mb-0" />
+        <button type="submit" class="btn-primary py-3 px-6 rounded-full w-full sm:w-auto">Subscribe</button>
+      </form>
+    </div>
+    <!-- Go to Top Arrow -->
+    <a href="#top" class="absolute bottom-4 right-4 text-gray-500 hover:text-yellow-400 transition-colors duration-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-70 hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-800">
+    <div class="max-w-6xl mx-auto text-center text-white">
+      <p>&copy; 2025 Artify. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS for Smooth Scrolling -->
+  <script>
+    $(document).ready(function() {
+      $('a[href^="#"]').click(function(e) {
+        e.preventDefault();
+        var target = $(this.hash);
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      });
+    });
+  </script>
+</body>
+</html>
